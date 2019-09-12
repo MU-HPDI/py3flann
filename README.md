@@ -1,17 +1,17 @@
 pyflann
 =============
 
-###1. Introduction
+## 1. Introduction
 
 pyflann is the python bindings for [FLANN - Fast Library for Approximate Nearest Neighbors](http://www.cs.ubc.ca/research/flann/).
 
-###2. Install
+## 2. Install
 
 #### For python2
 
 This package uses distutils, which is the default way of installing python modules. To install in your home directory, securely run the following:
 ```
-git clone https://github.com/primetang/pyflann.git
+git clone https://github.com/scottgs/pyflann.git
 cd pyflann
 [sudo] python setup.py install
 ```
