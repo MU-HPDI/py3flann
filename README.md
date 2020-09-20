@@ -1,4 +1,4 @@
-pyflann
+pyflann  - with edits for Python 3 compatibility
 =============
 
 ## 1. Introduction
