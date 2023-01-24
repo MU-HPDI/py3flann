@@ -25,7 +25,7 @@ Or directly through `pip` to install it:
 
 Please refer to [this issuse](https://github.com/primetang/pyflann/issues/1) to modify the code.
 
-###3. Usage
+### 3. Usage
 
 Use it just like the following code:
 ```python
