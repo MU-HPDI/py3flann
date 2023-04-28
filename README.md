@@ -11,7 +11,7 @@ pyflann is the python bindings for [FLANN - Fast Library for Approximate Nearest
 
 This package uses distutils, which is the default way of installing python modules. To install in your home directory, securely run the following:
 ```
-git clone https://github.com/scottgs/pyflann.git
+git clone https://github.com/MU-HPDI/py3flann.git pyflann
 cd pyflann
 [sudo] python setup.py install
 ```
