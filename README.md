@@ -23,7 +23,8 @@ Or directly through `pip` to install it:
 
 #### For python3
 
-Please refer to [this issuse](https://github.com/primetang/pyflann/issues/1) to modify the code.
+~~Please refer to [this issuse](https://github.com/primetang/pyflann/issues/1) to modify the code.~~
+This is a Python 3 compatible version!
 
 ### 3. Usage
 
