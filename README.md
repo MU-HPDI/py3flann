@@ -56,3 +56,32 @@ result, dists = flann.nn(
 print(result)
 print(dists)
 ```
+
+--- 
+
+# A better example for building fast K-NN indexing with KD-tree
+
+```
+import pyflann as pf
+import numpy as np
+
+dataset = np.random.rand(10000, 128)
+testset = np.random.rand(1000, 128)
+
+# Build Index
+FLANN_BUILD_INDEX_PARAMS = dict(
+    algorithm="kdtree_simple",
+)
+kdtree = pf.FLANN()
+kdtree.build_index(dataset, **FLANN_BUILD_INDEX_PARAMS)
+
+# Query Index (top-25)
+query = testset[0,:]
+
+# Use the testing (query) vector to find the top-25
+res, dists = kdtree.nn_index(query, num_neighbors=25)
+
+# List out the Top-25
+for d,r in zip(dists[0],res[0]):
+    print("Match: Dist = {}, data={}".format(d,r))
+```
